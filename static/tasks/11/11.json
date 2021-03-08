@@ -1,0 +1,30 @@
+{
+    "data":[
+        {
+            "resources" : ["mp3"],
+            "requests" : [],
+            "textOutputs" : ["co mají společného vyjmenované předměty?"],
+            "custom": [],
+            "note": "Poslouchejte zadání a vypište odpověď.",
+            "category": "Abstrakce",
+            "nextStep": "true"
+        },
+        {
+            "resources" : ["mp3"],
+            "requests" : [],
+            "textOutputs" : ["co mají společného vyjmenované předměty?"],
+            "custom": [],
+            "note": "Poslouchejte zadání a vypište odpověď.",
+            "category": "Abstrakce",
+            "nextStep": "true"
+        },
+        {
+            "resources" : ["mp3"],
+            "requests" : [],
+            "textOutputs" : ["co mají společného vyjmenované předměty?"],
+            "custom": [],
+            "note": "Poslouchejte zadání a vypište odpověď.",
+            "category": "Abstrakce"
+        }
+    ] 
+}

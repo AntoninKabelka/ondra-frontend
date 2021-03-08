@@ -1,0 +1,39 @@
+{
+    "data":[
+        {
+            "resources" : ["mp3"],
+            "requests" : [],
+            "textOutputs" : [],
+            "custom": [],
+            "note": "Poslouchejte zadání.",
+            "category": "Řeč",
+            "nextStep": "true"
+        },
+        {
+            "resources" : ["mp3"],
+            "requests" : ["mp3"],
+            "textOutputs" : [],
+            "custom": [],
+            "note": "Poslechňete si větu a pak jí zopakujte nahlas.",
+            "category": "Řeč",
+            "nextStep": "true"
+        },
+        {
+            "resources" : ["mp3"],
+            "requests" : [],
+            "textOutputs" : [],
+            "custom": [],
+            "note": "Poslouchejte zadání.",
+            "category": "Řeč",
+            "nextStep": "true"
+        },
+        {
+            "resources" : ["mp3"],
+            "requests" : ["mp3"],
+            "textOutputs" : [],
+            "custom": [],
+            "note": "Poslechňete si větu a pak jí zopakujte nahlas.",
+            "category": "Řeč"
+        }
+    ] 
+}

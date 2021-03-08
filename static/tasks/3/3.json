@@ -1,0 +1,12 @@
+{
+    "data":[
+        {
+            "resources" : ["mp3"],
+            "requests" : ["png"],
+            "textOutputs" : [],
+            "custom": [],
+            "note": "Nakreslete hodiny.",
+            "category": "zks / ef"
+        }
+    ] 
+}

@@ -1,0 +1,21 @@
+{
+    "data":[
+        {
+            "resources" : ["mp3"],
+            "requests" : [],
+            "textOutputs" : [],
+            "custom": [],
+            "note": "Poslouchejte zadání.",
+            "category": "Pozornost",
+            "nextStep": "true"
+        },
+        {
+            "resources" : ["mp3"],
+            "requests" : [],
+            "textOutputs" : [],
+            "custom": ["ClickingStep"],
+            "note": "Klikejte na tlačítko pokud zazní písmeno A.",
+            "category": "Pozornost"
+        }
+    ] 
+}

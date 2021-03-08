@@ -1,0 +1,12 @@
+{
+    "data":[
+        {
+            "resources" : ["mp3","png"],
+            "requests" : ["png"],
+            "textOutputs" : [],
+            "custom": [],
+            "note": "Obkreslete krychli vedle.",
+            "category": "zks / ef"
+        }
+    ]
+}
