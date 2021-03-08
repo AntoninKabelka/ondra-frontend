@@ -1,5 +1,5 @@
 export const state = () => ({
-    counter: 7,
+    counter: 1,
     userId: '',
     
 })

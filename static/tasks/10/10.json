@@ -13,7 +13,7 @@
             "resources" : ["mp3"],
             "requests" : ["mp3"],
             "textOutputs" : [],
-            "custom": ["po minute ukonci a pusti stop mp3"],
+            "custom": [],
             "note": "Vyjmenujte co nejvíce slov podle zadání.",
             "category": "Řeč"
         }
