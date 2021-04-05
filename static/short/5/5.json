@@ -1,0 +1,21 @@
+{
+    "data":[
+        {
+            "resources" : ["mp3"],
+            "requests" : [],
+            "textOutputs" : [],
+            "custom": [],
+            "note": "Poslouchejte zadání.",
+            "category": "Pozornost",
+            "nextStep": "true"
+        },
+        {
+            "resources" : [],
+            "requests" : ["txt"],
+            "textOutputs" : ["100-7", "předchozí výsledek - 7","předchozí výsledek - 7","předchozí výsledek - 7","předchozí výsledek - 7"],
+            "custom": [],
+            "note": "Vyplňte výpočty",
+            "category": "Pozornost"
+        }
+    ] 
+}

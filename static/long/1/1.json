@@ -1,0 +1,12 @@
+{
+    "data":[
+        {
+            "resources" : ["mp3","png"],
+            "requests" : ["png"],
+            "textOutputs" : [],
+            "custom": [],
+            "note": "Namalujte čáru podle zadaní.",
+            "category": "zks / ef"
+        }
+    ]
+}

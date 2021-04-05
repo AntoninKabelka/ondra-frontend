@@ -1,9 +1,9 @@
 <template>
     <v-container>
-        <h1>Dekujeme za vyplneni testu</h1>
-        <p>random text</p>
+        <h1>Děkujeme za vyplnění testu</h1>
+        <p></p>
         <NuxtLink :to="'/'">
-            <v-btn> Domu </v-btn>
+            <v-btn> Zpět na hlavní stránku </v-btn>
         </NuxtLink>
     </v-container>
 </template>

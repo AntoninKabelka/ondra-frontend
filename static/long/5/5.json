@@ -1,0 +1,57 @@
+{
+    "data":[
+        {
+            "resources" : ["mp3"],
+            "requests" : [],
+            "textOutputs" : [],
+            "custom": [],
+            "note": "Poslouchejte zadání.",
+            "category": "Paměť",
+            "nextStep": "true"
+        },
+        {
+            "resources" : ["mp3"],
+            "requests" : [],
+            "textOutputs" : [],
+            "custom": [],
+            "note": "Poslouchejte zadání až zkončí klikněte na tlačítko pokračovat a vypište slova.",
+            "category": "Paměť",
+            "nextStep": "true"
+        },
+        {
+            "resources" : [],
+            "requests" : ["txt"],
+            "textOutputs" : ["slovo","slovo","slovo","slovo","slovo"],
+            "custom": [],
+            "note": "Vypište slova. Nezálží na pořadí.",
+            "category": "Paměť",
+            "nextStep": "true"
+        },
+        {
+            "resources" : ["mp3"],
+            "requests" : [],
+            "textOutputs" : [],
+            "custom": [],
+            "note": "Poslouchejte zadání.",
+            "category": "Paměť",
+            "nextStep": "true"
+        },
+        {
+            "resources" : ["mp3"],
+            "requests" : [],
+            "textOutputs" : [],
+            "custom": [],
+            "note": "Poslouchejte zadání až zkončí klikněte na tlačítko pokračovat a vypište slova znovu.",
+            "category": "Paměť",
+            "nextStep": "true"
+        },
+        {
+            "resources" : ["mp3"],
+            "requests" : ["txt"],
+            "textOutputs" : ["slovo","slovo","slovo","slovo","slovo"],
+            "custom": [],
+            "note": "Vypište slova. Nezálží na pořadí.",
+            "category": "Paměť"
+        }
+    ] 
+}

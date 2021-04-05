@@ -1,0 +1,30 @@
+{
+    "data":[
+        {
+            "resources" : ["mp3","png"],
+            "requests" : ["txt"],
+            "textOutputs" : ["jmeno zvirete"],
+            "custom": [],
+            "note": "Napiste jmeno zvirete.",
+            "category": "pojmenovani zvirete",
+            "nextStep": "true"
+        },
+        {
+            "resources" : ["png"],
+            "requests" : ["txt"],
+            "textOutputs" : ["jmeno zvirete2"],
+            "custom": [],
+            "note": "Napiste jmeno zvirete.",
+            "category": "pojmenovani zvirete",
+            "nextStep": "true"
+        },
+        {
+            "resources" : ["png"],
+            "requests" : ["txt"],
+            "textOutputs" : ["jmeno zvirete3"],
+            "custom": [],
+            "note": "Napiste jmeno zvirete.",
+            "category": "pojmenovani zvirete"
+        }
+    ] 
+}

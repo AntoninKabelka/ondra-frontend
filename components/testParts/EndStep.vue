@@ -2,7 +2,7 @@
     <div>
         <NuxtLink
          :to="url">
-        <v-btn>{{title}}</v-btn>
+        <v-btn @click="endTest()">{{title}}</v-btn>
         </NuxtLink>
         
     </div>
@@ -19,6 +19,12 @@ export default {
     },
     mounted(){
         
+    },
+    methods: {
+        endTest(){
+            console.log("Ending test - reseting vuex store")
+            this.$store.commit('resetState')
+        }
     }
 }
 </script>

@@ -1,0 +1,21 @@
+{
+    "data":[
+        {
+            "resources" : ["mp3"],
+            "requests" : [],
+            "textOutputs" : [],
+            "custom": [],
+            "note": "Poslouchejte zadání",
+            "category": "Řeč",
+            "nextStep": "true"
+        },
+        {
+            "resources" : ["mp3"],
+            "requests" : [],
+            "textOutputs" : [],
+            "custom": ["CustomRecorder"],
+            "note": "Vyjmenujte co nejvíce slov podle zadání.",
+            "category": "Řeč"
+        }
+    ] 
+}

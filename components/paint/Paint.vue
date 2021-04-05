@@ -15,15 +15,17 @@ export default {
     },
     methods: {  
         saveImage(){
+            console.log("sending image from paint")
             let canvas = document.getElementById('myCanvas') 
             let axios = this.$axios
             let filename = this.$store.state.counter
+            let userId = this.$store.state.userId
 
             canvas.toBlob(function(blob) {
                 const formData = new FormData();
                 formData.append('file', blob, `${filename}.png`);
 
-                axios.post('/api/upload', formData);
+                axios.post(`http://localhost:5000/api/v1/file/upload/${userId}`, formData);
             });
         },
         createCanvas(){
@@ -34,27 +36,21 @@ export default {
             
             canvas.width = parseInt(paintStyle.getPropertyValue("width"))
             canvas.height = parseInt(paintStyle.getPropertyValue("height"))
-            
-            
+    
             cntx.fillStyle = "white";
             cntx.fillRect(0, 0, canvas.width, canvas.height);
 
             if (this.imageUrl.length > 0){
                 let baseImage = new Image();
                 baseImage.src = this.imageUrl;
-                console.log(baseImage)
                 baseImage.onload = function(){
                     cntx.drawImage(baseImage, canvas.width/2, 0);
                 }  
             }
-              
-
             var mouse = {x: 0, y: 0}
-            
             canvas.addEventListener('mousemove', function(e){
                 mouse.x = e.layerX
-                mouse.y = e.layerY
-                console.log(e)      
+                mouse.y = e.layerY  
             }, false)
         
             // window.addEventListener('click', function(e){
@@ -79,9 +75,6 @@ export default {
                 cntx.lineTo(mouse.x, mouse.y)
                 cntx.stroke()
             }
-
-
-
         }
     }
 }

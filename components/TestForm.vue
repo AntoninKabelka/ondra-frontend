@@ -1,90 +1,45 @@
 <template>
-  <validation-observer
+    <validation-observer
     ref="observer"
-    v-slot="{ invalid }"
-  >
+    v-slot="{ invalid }">
     <form @submit.prevent="submit">
-      <validation-provider
+        <validation-provider
         v-slot="{ errors }"
         name="Name"
-        rules="required|max:35"
-      >
-        <v-text-field
-          v-model="name"
-          :counter="35"
-          :error-messages="errors"
-          label="Name"
-          required
-        ></v-text-field>
-      </validation-provider>
-      <validation-provider
-        v-slot="{ errors }"
-        name="phoneNumber"
-        :rules="{
-          required: true,
-          digits: 9,
-          regex: '[0-9]{9}'
-        }"
-      >
-        <v-text-field
-          v-model="phoneNumber"
-          :counter="9"
-          :error-messages="errors"
-          label="Phone Number"
-          required
-        ></v-text-field>
-      </validation-provider>
-      <validation-provider
-        v-slot="{ errors }"
-        name="email"
-        rules="required|email"
-      >
-        <v-text-field
-          v-model="email"
-          :error-messages="errors"
-          label="E-mail"
-          required
-        ></v-text-field>
-      </validation-provider>
-      <validation-provider
-        v-slot="{ errors }"
-        name="select"
-        rules="required"
-      >
+        rules="required|max:35">
+            <v-text-field
+            v-model="name"
+            :counter="35"
+            :error-messages="errors"
+            label="Jméno"
+            required />
+        </validation-provider>
         <v-select
-          v-model="select"
-          :items="gender"
-          :error-messages="errors"
-          label="Gender"
-          data-vv-name="select"
-          required
-        ></v-select>
-      </validation-provider>
-      <validation-provider
-        v-slot="{ errors }"
-        rules="required"
-        name="checkbox"
-      >
-        <v-checkbox
-          v-model="checkbox"
-          :error-messages="errors"
-          value="1"
-          label="Option"
-          type="checkbox"
-          required
-        ></v-checkbox>
-      </validation-provider>
-
-      <v-btn
+        v-model="select"
+        :items="gender"
+        :error-messages="errors"
+        label="Pohlaví"
+        data-vv-name="select"
+        required />
+        <v-text-field
+        v-model="age"
+        :error-messages="errors"
+        label="Věk"
+        required />
+        <v-slider
+        v-model="skill"
+        color="blue"
+        label="Zručnost s počítačem"
+        hint="1 = nejsem zručný, 10 = ovládám perfektně"
+        min="1"
+        max="10"
+        thumb-label />
+        <v-btn
         class="mr-4"
         type="submit"
-        :disabled="invalid"
-      >
-        submit
-      </v-btn>
-      <v-btn @click="clear">
-        clear
-      </v-btn>
+        :disabled="invalid">
+        Začít test
+        </v-btn>
     </form>
   </validation-observer>
 </template>
@@ -126,10 +81,11 @@
       ValidationObserver,
     },
     data: () => ({
+        errors: [],
       name: '',
-      phoneNumber: '',
-      email: '',
-      select: null,
+      skill: '',
+      age: '',
+      select: '',
       gender: [
         'Muž',
         'Žena',
@@ -138,20 +94,20 @@
     }),
 
     methods: {
-      submit () {
+      async submit () {
         this.$refs.observer.validate()
-        //axios call na backend vrati id
-        let userId = '1293102u4'
+
+        let res = await this.$axios.post('http://localhost:5000/api/v1/test', {
+            name: this.name,
+            version: this.$store.state.version,
+            skill: this.skill,
+            gender: this.select,
+            age: this.age
+        })
+        console.log(res.data.test_id)
+        let userId = res.data.test_id
         this.$store.commit('setUserId', userId)
         this.$forceUpdate()
-      },
-      clear () {
-        this.name = ''
-        this.phoneNumber = ''
-        this.email = ''
-        this.select = null
-        this.checkbox = null
-        this.$refs.observer.reset()
       },
     },
   }

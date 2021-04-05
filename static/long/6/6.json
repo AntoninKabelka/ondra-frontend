@@ -1,0 +1,57 @@
+{
+    "data":[
+        {
+            "resources" : ["mp3"],
+            "requests" : [],
+            "textOutputs" : [],
+            "custom": [],
+            "note": "Poslouchejte zadání.",
+            "category": "Pozornost",
+            "nextStep": "true"
+        },
+        {
+            "resources" : ["mp3"],
+            "requests" : [],
+            "textOutputs" : [],
+            "custom": [],
+            "note": "Poslouchejte řadu čísel.",
+            "category": "Pozornost",
+            "nextStep": "true"
+        },
+        {
+            "resources" : [],
+            "requests" : ["txt"],
+            "textOutputs" : ["číslo","číslo","číslo","číslo","číslo"],
+            "custom": [],
+            "note": "Vypište čísla, tak jak šla za sebou",
+            "category": "Pozornost",
+            "nextStep": "true"
+        },
+        {
+            "resources" : ["mp3"],
+            "requests" : [],
+            "textOutputs" : [],
+            "custom": [],
+            "note": "Poslouchejte zadání.",
+            "category": "Pozornost",
+            "nextStep": "true"
+        },
+        {
+            "resources" : ["mp3"],
+            "requests" : [],
+            "textOutputs" : [],
+            "custom": [],
+            "note": "Poslouchejte řadu čísel.",
+            "category": "Pozornost",
+            "nextStep": "true"
+        },
+        {
+            "resources" : [],
+            "requests" : ["txt"],
+            "textOutputs" : ["číslo","číslo","číslo"],
+            "custom": [],
+            "note": "Vypište čísla, v opačném pořadí",
+            "category": "Pozornost"
+        }
+    ] 
+}
