@@ -7,15 +7,17 @@
             "custom": [],
             "note": "Poslouchejte zadání",
             "category": "Řeč",
-            "nextStep": "true"
+            "nextStep": "true",
+            "disabledTime": 36
         },
         {
             "resources" : ["mp3"],
             "requests" : [],
             "textOutputs" : [],
             "custom": ["CustomRecorder"],
-            "note": "Vyjmenujte co nejvíce slov podle zadání.",
-            "category": "Řeč"
+            "note": "Vyjmenujte co nejvíce slov dokud neuslyšíte slovo STOP.",
+            "category": "Řeč",
+            "disabledTime": 65
         }
     ] 
 }

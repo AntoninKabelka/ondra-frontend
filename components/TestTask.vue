@@ -45,12 +45,15 @@
                     <v-container v-if="customComponent != 'EndStep'">
                         <v-btn 
                          v-if="data.nextStep" 
-                         @click="nextStep()">
+                         @click="nextStep()"
+                         :key="disabled"
+                         :disabled="disabled">
                             Další krok
                             </v-btn>
                         <v-btn 
                          v-else 
-                         @click="nextTask()">
+                         @click="nextTask()"
+                         :disabled="disabled">
                             Další Úkol
                         </v-btn>
                     </v-container>
@@ -80,6 +83,7 @@ export default {
                 textOutputs: [],
                 nextStep: false,
                 resources:[],
+                disabledTime: 1,
             },
             imagePath: '',
             soundPath:'',
@@ -87,22 +91,32 @@ export default {
             inputRows: 2,
             step: 1,
             audioElement: null,
+            disabled: true,
         }
     },
     mounted(){
         this.getTaskSettings(this.step-1);
         this.playSound()  
+        
     },
     methods: {
         getTaskSettings(step){
             var json = require(`../static/${this.$store.state.version}/${this.$store.state.counter}/${this.$store.state.counter}.json`);
             this.data = json.data[step]   
+            console.log(this.data)
             this.imagePath = this.data.resources.includes('png') ? `/${this.$store.state.version}/${this.$store.state.counter}/${this.step}.png` : ''
             this.soundPath = this.data.resources.includes('mp3') ? `/${this.$store.state.version}/${this.$store.state.counter}/${this.step}.mp3` : ''
             this.customComponent = this.data.custom.length > 0 ? this.customComponent = this.data.custom[0] : ''
             console.log(this.customComponent)
+            let time = parseInt(this.data.disabledTime)*1000
+            console.log(time)
+            setTimeout(this.activateButton, time)
+        },
+        activateButton(){
+            this.disabled = false
         },
         nextStep(){
+            this.disabled = true
             this.stopSound()
             console.log(this.data.requests)
             if (this.data.requests.includes('txt')) {
@@ -119,6 +133,7 @@ export default {
             
         },
         nextTask(){
+            this.disabled = true
             this.stopSound()
 
             if (this.data.requests.includes('png')) {

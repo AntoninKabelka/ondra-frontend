@@ -7,7 +7,8 @@
             "custom": [],
             "note": "Poslouchejte zadání.",
             "category": "Pozornost",
-            "nextStep": "true"
+            "nextStep": "true",
+            "disabledTime": 10
         },
         {
             "resources" : [],

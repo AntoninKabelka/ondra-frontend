@@ -18,12 +18,12 @@
 <script>
 export default {
     async mounted() {
-        let data = await this.$axios.get('http://localhost:5000/api/v1/get_file', {responseType: 'blob'})
-        console.log(data)
-        let blob = data.data
-        const audioUrl = URL.createObjectURL(blob);
-        const audio = new Audio(audioUrl);
-        audio.play();
+        // let data = await this.$axios.get('http://localhost:5000/api/v1/get_file', {responseType: 'blob'})
+        // console.log(data)
+        // let blob = data.data
+        // const audioUrl = URL.createObjectURL(blob);
+        // const audio = new Audio(audioUrl);
+        // audio.play();
     },
     methods: {
         startShortVersion() {

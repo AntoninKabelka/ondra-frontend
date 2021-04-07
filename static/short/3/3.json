@@ -6,7 +6,8 @@
             "textOutputs" : [],
             "custom": [],
             "note": "Nakreslete hodiny.",
-            "category": "zks / ef"
+            "category": "zks / ef",
+            "disabledTime": 12
         }
     ] 
 }

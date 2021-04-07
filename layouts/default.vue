@@ -4,8 +4,8 @@
       app
       color="blue"
     >
-      <v-app-bar-nav-icon></v-app-bar-nav-icon>
-      <v-toolbar-title><NuxtLink to="/">Montrealsky kognitivni test</NuxtLink></v-toolbar-title>
+      <!-- <v-app-bar-nav-icon></v-app-bar-nav-icon> -->
+      <v-toolbar-title>Montrealský kognitivní test</v-toolbar-title>
     </v-app-bar>
     <v-main>
       <v-container>

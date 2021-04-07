@@ -7,7 +7,8 @@
             "custom": [],
             "note": "Napiste jmeno zvirete.",
             "category": "pojmenovani zvirete",
-            "nextStep": "true"
+            "nextStep": "true",
+            "disabledTime": 3
         },
         {
             "resources" : ["png"],

@@ -7,7 +7,8 @@
             "custom": [],
             "note": "Poslouchejte zadání.",
             "category": "Pozornost",
-            "nextStep": "true"
+            "nextStep": "true",
+            "disabledTime": 12
         },
         {
             "resources" : ["mp3"],
@@ -15,7 +16,8 @@
             "textOutputs" : [],
             "custom": ["ClickingStep"],
             "note": "Klikejte na tlačítko pokud zazní písmeno A.",
-            "category": "Pozornost"
+            "category": "Pozornost",
+            "disabledTime": 53
         }
     ] 
 }

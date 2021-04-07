@@ -4,7 +4,6 @@
          @click="saveClick()">
             {{title}}
         </v-btn>
-        <v-btn @click="log()"/>
     </div>
 </template>
 
