@@ -1,5 +1,5 @@
 export const state = () => ({
-    counter: 11,
+    counter: 1,
     step: 1,
     userId: '',
     version: '',
