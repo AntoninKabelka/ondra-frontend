@@ -96,7 +96,7 @@ export default {
     },
     mounted(){
         this.getTaskSettings(this.step-1);
-        this.playSound()  
+        setTimeout(this.playSound, 1000) 
         
     },
     methods: {
@@ -108,7 +108,7 @@ export default {
             this.soundPath = this.data.resources.includes('mp3') ? `/${this.$store.state.version}/${this.$store.state.counter}/${this.step}.mp3` : ''
             this.customComponent = this.data.custom.length > 0 ? this.customComponent = this.data.custom[0] : ''
             console.log(this.customComponent)
-            let time = parseInt(this.data.disabledTime)*1000
+            let time = parseInt(this.data.disabledTime)*1000 + 1000
             console.log(time)
             setTimeout(this.activateButton, time)
         },
@@ -129,7 +129,7 @@ export default {
             this.$forceUpdate()
             this.step = this.$store.state.step
             this.getTaskSettings(this.step-1)
-            this.playSound()
+            setTimeout(this.playSound, 1000)
             
         },
         nextTask(){
@@ -160,7 +160,7 @@ export default {
             console.log(this.$store.state.counter)
             this.imagePath = this.data.resources.includes("png") ? `/${this.$store.state.version}/${this.$store.state.counter}/${this.step}.png` : ''
             this.soundPath = this.data.resources.includes("mp3") ? `/${this.$store.state.version}/${this.$store.state.counter}/${this.step}.mp3` : ''
-            this.playSound()
+            setTimeout(this.playSound, 1000)
             
             console.log(this.imagePath);
         },
@@ -186,6 +186,7 @@ export default {
  }
  p{
      margin-left: 1rem;
+     font-size:20px;
  }
  img{
         width: 40%;

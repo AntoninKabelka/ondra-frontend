@@ -7,7 +7,7 @@
             "custom": [],
             "note": "Poslouchejte zadání až zkončí klikněte na tlačítko pokračovat a vypište slova.",
             "category": "Paměť",
-            "nextStetp": "true",
+            "nextStep": "true",
             "disabledTime": 12
         },
         {
