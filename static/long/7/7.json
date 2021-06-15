@@ -15,7 +15,7 @@
             "requests" : [],
             "textOutputs" : [],
             "custom": ["ClickingStep"],
-            "note": "Klikejte na tlačítko pokud zazní písmeno A.",
+            "note": "Kliknete",
             "category": "Pozornost",
             "disabledTime": 53
         }
