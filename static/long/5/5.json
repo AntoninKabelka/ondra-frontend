@@ -56,7 +56,16 @@
             "custom": [],
             "note": "Vypište slova. Nezálží na pořadí.",
             "category": "Paměť",
+            "nextStep": "true",
             "disabledTime" : 6
-        }
+        },
+        {
+            "resources" : ["mp3"],
+            "requests" : ["txt"],
+            "textOutputs" : ["slovo","slovo","slovo","slovo","slovo"],
+            "custom": [],
+            "note": "Poslouchejte zadaní.",
+            "category": "Paměť",
+            "disabledTime" : 7        }
     ] 
 }
