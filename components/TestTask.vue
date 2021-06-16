@@ -44,6 +44,7 @@
                 <v-col cols="12">
                     <v-container v-if="customComponent != 'EndStep'">
                         <v-btn 
+						class="nextButton"
                          v-if="data.nextStep" 
                          @click="nextStep()"
                          :key="disabled"
@@ -51,6 +52,7 @@
                             Další krok
                             </v-btn>
                         <v-btn 
+						class="nextButton"
                          v-else 
                          @click="nextTask()"
                          :disabled="disabled">
@@ -181,15 +183,25 @@ export default {
 </script>
 
 <style scoped>
- h1{
+h1
+{
      margin:1rem;   
- }
- p{
+}
+p
+{
      margin-left: 1rem;
      font-size:20px;
- }
- img{
-        width: 40%;
-        margin: 1rem;
-    }
+}
+img
+{
+	width: 40%;
+	margin: 1rem;
+}
+.nextButton {
+	height: 100px;
+	width: 100px;
+	color: black;
+	font-size: 25px;
+	background-color: white;
+}
 </style>
