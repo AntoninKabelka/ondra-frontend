@@ -5,8 +5,16 @@
                 <v-col cols="6">
                     <h1>Montrealský kognitivní test</h1>
                     <div class="buttons">
-                        <v-btn @click="startShortVersion"> Krátká verze</v-btn>
-                        <v-btn @click="startLongVersion"> Standardní verze</v-btn>
+                        <v-btn color="secondary"
+						elevation="9"
+						large
+						x-large
+						 @click="startShortVersion"> Krátká verze</v-btn>
+                        <v-btn color="secondary"
+						elevation="9"
+						large
+						x-large
+						@click="startLongVersion"> Standardní verze</v-btn>
                     </div>
                 </v-col>
                 <v-col cols="6"><img src="~/assets/home.svg" /></v-col>

@@ -1,8 +1,13 @@
 <template>
     <div>
         <NuxtLink
-         :to="url">
-        <v-btn @click="endTest()">{{title}}</v-btn>
+         :to="url" class="buttonss">
+        <v-btn color="secondary"
+			elevation="9"
+			large
+			x-large 
+			
+			@click="endTest()">{{title}}</v-btn>
         </NuxtLink>
         
     </div>
@@ -28,3 +33,9 @@ export default {
     }
 }
 </script>
+
+<style scoped>
+.buttonss span{
+	text-decoration: none;
+}
+</style>

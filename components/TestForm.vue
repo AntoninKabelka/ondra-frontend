@@ -35,6 +35,10 @@
         max="10"
         thumb-label />
         <v-btn
+		color="secondary"
+			elevation="9"
+			large
+			x-large
         class="mr-4"
         type="submit"
         :disabled="invalid">

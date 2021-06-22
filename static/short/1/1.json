@@ -37,7 +37,7 @@
             "note": "Poslouchejte zadání.",
             "category": "Paměť",
             "nextStep": "true",
-            "disabledTime" : 5
+            "disabledTime" : 13
         },
         {
             "resources" : ["mp3"],

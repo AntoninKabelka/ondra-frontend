@@ -13,7 +13,7 @@ export default {
     name: 'EndStep',
     data() {
         return {
-            title: 'Stiskněte když slyšíte A',
+            title: 'Stiskněte',
             startTime: Date.now(),
             clicks: []
         }

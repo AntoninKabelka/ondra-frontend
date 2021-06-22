@@ -1,6 +1,9 @@
 <template>
     <div> 
-        <v-btn 
+        <v-btn color="secondary"
+			elevation="9"
+			large
+			x-large
          @click="saveClick()">
             {{title}}
         </v-btn>
@@ -12,7 +15,7 @@ export default {
     name: 'EndStep',
     data() {
         return {
-            title: 'Stiskněte když slyšíte A',
+            title: 'Stiskněte',
             startTime: Date.now(),
             clicks: []
         }

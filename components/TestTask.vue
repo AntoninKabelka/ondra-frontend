@@ -45,6 +45,10 @@
                     <v-container v-if="customComponent != 'EndStep'">
                         <v-btn 
 						class="nextButton"
+						color="secondary"
+						elevation="9"
+						large
+						x-large
                          v-if="data.nextStep" 
                          @click="nextStep()"
                          :key="disabled"
@@ -53,6 +57,10 @@
                             </v-btn>
                         <v-btn 
 						class="nextButton"
+						color="secondary"
+						elevation="9"
+						large
+						x-large
                          v-else 
                          @click="nextTask()"
                          :disabled="disabled">
@@ -197,11 +205,11 @@ img
 	width: 40%;
 	margin: 1rem;
 }
-.nextButton {
-	height: 100px;
-	width: 100px;
+button.nextButton {
+	height: 4rem !important;
+	width: auto !important;
 	color: black;
-	font-size: 25px;
+	font-size: 1rem;
 	background-color: white;
 }
 </style>
