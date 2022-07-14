@@ -1,13 +1,22 @@
 {
     "data":[
         {
-            "resources" : [],
+            "resources" : ["mp3"],
             "requests" : [],
             "textOutputs" : [],
-            "custom": ["EndStep"],
-            "note": "Děkujeme za vyplnění testu.",
-            "category": "Orientace",
-            "nextStep": "true"
+            "custom": [],
+            "note": "Poslouchejte zadání až zkončí klikněte na tlačítko pokračovat a vypište slova.",
+            "category": "Paměť",
+            "nextStep": "true",
+            "disabledTime": 12
+        },
+        {
+            "resources" : [],
+            "requests" : ["txt"],
+            "textOutputs" : ["slovo","slovo","slovo","slovo","slovo"],
+            "custom": [],
+            "note": "Vypište slova. Nezálží na pořadí.",
+            "category": "Paměť"
         }
     ] 
 }

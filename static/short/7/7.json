@@ -2,32 +2,22 @@
     "data":[
         {
             "resources" : ["mp3"],
-            "requests" : ["txt"],
-            "textOutputs" : ["co mají společného vyjmenované předměty?"],
+            "requests" : [],
+            "textOutputs" : [],
             "custom": [],
-            "note": "Poslouchejte zadání a vypište odpověď.",
-            "category": "Abstrakce",
+            "note": "Poslouchejte zadání",
+            "category": "Řeč",
             "nextStep": "true",
-            "disabledTime": 15
+            "disabledTime": 36
         },
         {
             "resources" : ["mp3"],
-            "requests" : ["txt"],
-            "textOutputs" : ["co mají společného vyjmenované předměty?"],
-            "custom": [],
-            "note": "Poslouchejte zadání a vypište odpověď.",
-            "category": "Abstrakce",
-            "nextStep": "true",
-            "disabledTime": 6
-        },
-        {
-            "resources" : ["mp3"],
-            "requests" : ["txt"],
-            "textOutputs" : ["co mají společného vyjmenované předměty?"],
-            "custom": [],
-            "note": "Poslouchejte zadání a vypište odpověď.",
-            "category": "Abstrakce",
-            "disabledTime": 6
+            "requests" : [],
+            "textOutputs" : [],
+            "custom": ["CustomRecorder"],
+            "note": "Vyjmenujte co nejvíce slov dokud neuslyšíte slovo STOP.",
+            "category": "Řeč",
+            "disabledTime": 65
         }
     ] 
 }

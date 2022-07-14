@@ -5,19 +5,19 @@
             "requests" : [],
             "textOutputs" : [],
             "custom": [],
-            "note": "Poslouchejte zadání",
+            "note": "Poslouchejte zadání.",
             "category": "Řeč",
             "nextStep": "true",
-            "disabledTime": 36
+            "disabledTime": 6
         },
         {
             "resources" : ["mp3"],
-            "requests" : [],
+            "requests" : ["mp3"],
             "textOutputs" : [],
-            "custom": ["CustomRecorder"],
-            "note": "Vyjmenujte co nejvíce slov dokud neuslyšíte slovo STOP.",
+            "custom": [],
+            "note": "Poslechňete si větu a pak jí zopakujte nahlas.",
             "category": "Řeč",
-            "disabledTime": 65
+            "disabledTime": 8
         }
-    ] 
+    ]
 }

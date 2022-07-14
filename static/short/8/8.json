@@ -2,21 +2,22 @@
     "data":[
         {
             "resources" : ["mp3"],
-            "requests" : [],
-            "textOutputs" : [],
+            "requests" : ["txt"],
+            "textOutputs" : ["co mají společného vyjmenované předměty?"],
             "custom": [],
-            "note": "Poslouchejte zadání až zkončí klikněte na tlačítko pokračovat a vypište slova.",
-            "category": "Paměť",
+            "note": "Poslouchejte zadání a vypište odpověď.",
+            "category": "Abstrakce",
             "nextStep": "true",
-            "disabledTime": 12
+            "disabledTime": 15
         },
         {
-            "resources" : [],
+            "resources" : ["mp3"],
             "requests" : ["txt"],
-            "textOutputs" : ["slovo","slovo","slovo","slovo","slovo"],
+            "textOutputs" : ["co mají společného vyjmenované předměty?"],
             "custom": [],
-            "note": "Vypište slova. Nezálží na pořadí.",
-            "category": "Paměť"
+            "note": "Poslouchejte zadání a vypište odpověď.",
+            "category": "Abstrakce",
+            "disabledTime": 6
         }
-    ] 
+    ]
 }
